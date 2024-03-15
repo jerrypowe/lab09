@@ -56,6 +56,7 @@ public class Lab09 {
                 testCase = sc.nextLine();
                 testCaseList.add(testCase);
             }
+            System.out.println("SUCCESS");
 
 
 	//--FIXED PART - DO NOT EDIT ANY THINGS HERE--
@@ -92,8 +93,7 @@ public class Lab09 {
         for(String testCase : testCaseList){
            testCasePart = testCase.split(" ");
            commandType = testCasePart[0];
-           int n = Integer.parseInt(sc.nextLine());
-            for (int i = 0; i < n; i++) {
+          
                 
             
            switch (commandType){
@@ -102,22 +102,26 @@ public class Lab09 {
                    int pond = Integer.parseInt(testCasePart[2]);
                    Carp c = new Carp(State, pond);
                    carp.add(c);
+                   System.out.println("Carp");
                  break;  
                }
                case "Print" :{
-                   result += "---Print---";
+                   result += "---Print---\n";
                    for ( Carp ca : carp){
                        result += ca.printData()+" , ";
                    }
                   break;
                }
                case "F1":{
-                   result += "---F1---";
-                   result += String.format("%d",mc.f1(carp));
-                   result += "---";
+                   result += "---F1---\n";
+                   int a = mc.f1(carp);
+                   result += String.format("%d\n",a);
+                   result += "---\n";
+                    System.out.println("F1");
                    break;
                }
                case "F2": {
+                   result += "---F2---\n";
                    result += "Before Updating: " ;
                    for ( Carp ca : carp){
                        result += ca.printData()+" , ";
@@ -129,24 +133,28 @@ public class Lab09 {
                        result += ca.printData()+" , ";
                }
                result   += "\n" ;
+                   System.out.println("F2");
                break;
                    }
                case "F3":{
+                        result += "---F3---\n";
                    result += "Beforre Sorting: ";
                    
                    for ( Carp ca : carp){
                        result += ca.printData()+" , ";
                    }
                    result += "\n";
-                   mc.f3(carp);for ( Carp ca : carp){
+                   mc.f3(carp);
+                   for ( Carp ca : carp){
                        result += ca.printData()+" , ";
                    }
                    result += "\n";
+                    System.out.println("F3");
                    break;
                }
            
            }
-            }
+            
                
               
        }

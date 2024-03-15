@@ -30,7 +30,7 @@ public class MyCarp implements ICarp{
     @Override
     public void f2(List<Carp> t) {
         ArrayList<String> s = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < t.size(); i++) {
             String regex = "\"(.)(.?\\\\1)*\"";
             if(t.get(i).getPond().matches(regex)){
                 t.get(i).setState(99);
