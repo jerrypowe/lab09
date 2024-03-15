@@ -110,6 +110,7 @@ public class Lab09 {
                    for ( Carp ca : carp){
                        result += ca.printData()+" , ";
                    }
+                   result += "\n";
                   break;
                }
                case "F1":{

@@ -18,9 +18,9 @@ public class MyCarp implements ICarp{
     public int f1(List<Carp> t) {
         int n=0;
         ArrayList<String> s = new ArrayList<>();
-        for (int i = 0; i < t.size() ; i++) {
-            String regex = "\\p{L}\\d";
-           if( t.get(i).getPond().matches(regex)){
+        for (Carp carp : t) {
+            String regex = "\\p{L}\\d\\p{L}";
+           if( carp.getPond().charAt(1)>='0'&& carp.getPond().charAt(1)<='9'){
                n ++;
            }
         }
