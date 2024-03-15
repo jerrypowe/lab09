@@ -124,15 +124,22 @@ public class Lab09 {
                case "F2": {
                    result += "---F2---\n";
                    result += "Before Updating: " ;
-                   for ( Carp ca : carp){
-                       result += ca.printData()+" , ";
+                   for (int i = 0; i < carp.size()-1; i++) {
+                       
+                   
+                       result += carp.get(i).printData()+" , ";
                    }
+                   int z = carp.size()-2;
+                   result += carp.get(z).printData()+".";
                    result += "\n";
                result +=  "After Updating: ";
                mc.f2(carp);
-               for ( Carp ca : carp){
-                       result += ca.printData()+" , ";
-               }
+               for (int i = 0; i < carp.size()-1; i++) {
+                       
+                   
+                       result += carp.get(i).printData()+" , ";
+                   }
+                   result += carp.get(carp.size()-2).printData();
                result   += "\n" ;
                    System.out.println("F2");
                break;
@@ -141,14 +148,22 @@ public class Lab09 {
                         result += "---F3---\n";
                    result += "Beforre Sorting: ";
                    
-                   for ( Carp ca : carp){
-                       result += ca.printData()+" , ";
+                  for (int i = 0; i < carp.size()-1; i++) {
+                       
+                   
+                       result += carp.get(i).printData()+" , ";
                    }
+                   result += carp.get(carp.size()-2).printData();
                    result += "\n";
+                   result += "After Sorting: ";
                    mc.f3(carp);
-                   for ( Carp ca : carp){
-                       result += ca.printData()+" , ";
+                   for (int i = 0; i < carp.size()-1; i++) {
+                       
+                   
+                       result += carp.get(i).printData()+" , ";
                    }
+                   result += carp.get(carp.size()-2).printData();
+                   result += "\n";
                    result += "\n";
                     System.out.println("F3");
                    break;

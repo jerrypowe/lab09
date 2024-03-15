@@ -4,8 +4,9 @@
 6
 ---
 ---F2---
-Before Updating: (AC,9) , (B9B,2) , (C7,8) , (D3D,2) , (EG,7) , (F5F,6) , (G4,5) , (H3,4) , 
-After Updating: (AC,9) , (B9B,2) , (C7,8) , (D3D,2) , (EG,7) , (F5F,6) , (G4,5) , (H3,4) , 
+Before Updating: (AC,9) , (B9B,2) , (C7,8) , (D3D,2) , (EG,7) , (F5F,6) , (G4,5) , (G4,5).
+After Updating: (AC,9) , (B9B,99) , (C7,8) , (D3D,2) , (EG,7) , (F5F,6) , (G4,5) , (G4,5)
 ---F3---
-Beforre Sorting: (AC,9) , (B9B,2) , (C7,8) , (D3D,2) , (EG,7) , (F5F,6) , (G4,5) , (H3,4) , 
-(AC,9) , (B9B,8) , (C7,7) , (D3D,2) , (EG,2) , (F5F,6) , (G4,5) , (H3,4) , 
+Beforre Sorting: (AC,9) , (B9B,99) , (C7,8) , (D3D,2) , (EG,7) , (F5F,6) , (G4,5) , (G4,5)
+After Sorting: (AC,99) , (B9B,9) , (C7,8) , (D3D,7) , (EG,2) , (F5F,6) , (G4,5) , (G4,5)
+

@@ -30,11 +30,15 @@ public class MyCarp implements ICarp{
     @Override
     public void f2(List<Carp> t) {
         ArrayList<String> s = new ArrayList<>();
-        for (int i = 0; i < t.size(); i++) {
-            String regex = "\"(.)(.?\\\\1)*\"";
-            if(t.get(i).getPond().matches(regex)){
-                t.get(i).setState(99);
-            }
+       for (Carp carp : t) {
+            String reverse ="";
+            for (int i = carp.getPond().length()-1; i >= 0; i--) {
+                    reverse += carp.getPond().charAt(i); 
+                    }
+            if(carp.getPond().equalsIgnoreCase(reverse)) {
+                carp.setState(99); 
+                break;}       
+            
             
         }
     }
